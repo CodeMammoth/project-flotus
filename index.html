@@ -1,0 +1,48 @@
+<!--PROJECT FLOTUS-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project Flotus</title>
+		<meta name="author" content="lemonpup">
+		<meta name="description" content="Database for Flying Lotus">
+		<link rel="stylesheet" href="sources/stylesheet.css">
+	</head>
+	<body>
+		<div class="head-pic">
+			<a href="#"><img id="cover" src="sources/youre-dead-header.jpg" alt="You're Dead! (2014)"></a>
+		</div>
+		<div class="main-body">
+		</div>
+		<div id="about" class="mainpage-infobox">
+			<h2>About</h2>
+			<p>Flying Lotus is from Los Angeles...</p>
+		</div>
+		<div id="discography" class="mainpage-infobox">
+			<h2>Discography</h2>
+			<select id="dropdown-discography">
+				<option value="youredead">Flying Lotus - You're Dead! (2014)</option>
+				<option value="ideasdraftsloops">Flying Lotus - Ideas + Drafts + Loops (2013)</option>
+				<option value="duality">Captain Murphy - Duality (2012)</option>
+				<option value="untilthequietcomes">Flying Lotus - Until the Quiet Comes (2012)</option>
+				<option value="cosmogramma">Flying Lotus - Cosmogramma (2010)</option>
+				<option value="losangeles">Flying Lotus - Los Angeles (2008)</option>
+				<option value="1983">Flying Lotus - 1983 (2006)</option>
+			</select>
+			<p></p>
+			<p><a href="albums/ideas-drafts-loops.html">Flying Lotus - Ideas + Drafts + Loops (2013)</a></p>
+			<p><a href="albums/duality.html">Captain Murphy - Duality (2012)</a></p>
+			<p><a href="albums/until-the-quiet-comes.html">Flying Lotus - Until the Quiet Comes (2012)</a></p>
+			<p><a href="albums/cosmogramma.html">Flying Lotus - Cosmogramma (2010)</a></p>
+			<p><a href="albums/los-angeles.html">Flying Lotus - Los Angeles (2008)</a></p>
+			<p><a href="albums/1983.html">"Flying Lotus - 1983 (2006)</a></p>
+		</div>
+		<div id="brainfeeder" class="mainpage-infobox">
+		</div>
+	</body>
+	<script>
+		function getAlbum() {
+		var e = document.getElementById("dropdown-discography");
+		var album = e.options[e.selectedIndex].text;
+		}
+	</script>
+</html>
